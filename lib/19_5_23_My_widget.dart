@@ -6,7 +6,12 @@ final Image? image;
 VoidCallback? onpress;
 Widget? label;
 
-widget({this.bcolor,required this.image,this.onpress,this.label});
+widget({
+  this.bcolor,
+  required this.image,
+  this.onpress,
+  this.label
+});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +19,8 @@ widget({this.bcolor,required this.image,this.onpress,this.label});
       child: ListTile(
           title:label,
           leading: image,
-           onTap: onpress),
+           onTap: onpress
+      ),
     color: bcolor,);
   }
 }
